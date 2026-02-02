@@ -1,76 +1,134 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>HTML Assignment 3</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: sans-serif;
+            text-align: center; /* Centers the H1 */
+        }
+
+        /* Table Styling */
+        table {
+            border: 1px solid black;
+            border-spacing: 1px; /* Required by instructions */
+            margin-bottom: 20px;
+            width: 80%; /* Optional: Makes tables look nice */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Cell Styling */
+        td, th {
+            border: 1px solid black;
+            padding: 1px; /* Required by instructions */
+        }
+
+        /* Required Classes */
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .green {
+            background-color: green;
+            height: 20px; /* Gives the color bar some height */
+        }
+
+        .blue {
+            background-color: blue;
+            height: 20px; /* Gives the color bar some height */
+        }
+
+        /* Image styling to match screenshot */
+        img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<h1 align="center">HTML Assignment #3</h1>
 
-    <table id="table-1" class="middle" border="1" cellspacing="1" cellpadding="1" width="100%">
+    <h1>HTML Assignment #3</h1>
+
+    <table id="table-1" class="middle">
         <tr>
             <td id="t11">left</td>
-            <td id="t12" align="center">center</td>
-            <td id="t13" class="right" align="right">right</td>
-        </tr>
-        <tr class="center" align="center">
-            <td style="text-align: left">left</td>
-            <td>center</td>
-            <td class="right" align="right">right</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
         <tr>
             <td>left</td>
-            <td align="center">center</td>
-            <td class="right" align="right">right</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
         </tr>
     </table>
 
-    <br>
-
-    <table id="table-2" class="middle" border="1" cellspacing="1" cellpadding="1" width="100%">
+    <table id="table-2" class="middle">
         <tr>
             <td id="t21" colspan="6">&nbsp;</td>
         </tr>
+        
         <tr>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td rowspan="4">&nbsp;</td> <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td> </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
+
         <tr>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">&nbsp;</td> </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
+
         <tr>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td colspan="6">&nbsp;</td>
         </tr>
     </table>
 
-    <br>
-
-    <table id="table-3" class="middle" border="1" cellspacing="1" cellpadding="1" width="100%">
-        <tr class="green" bgcolor="green">
-            <td colspan="3" height="40">&nbsp;</td>
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td></td>
         </tr>
+        
         <tr>
-            <td>&nbsp;</td>
-            <td id="t-image" align="center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Jordan_Lipofsky.jpg" alt="Michael Jordan" height="200">
+            <td id="t-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Michael_Jordan_%281987-1988%29.jpg/640px-Michael_Jordan_%281987-1988%29.jpg" alt="Michael Jordan" width="300">
             </td>
-            <td>&nbsp;</td>
         </tr>
-        <tr class="blue" bgcolor="blue">
-            <td colspan="3" height="40">&nbsp;</td>
+        
+        <tr class="blue">
+            <td></td>
         </tr>
     </table>
-    <script type="text/javascript" src="./script.js">
-</script>
 
 </body>
-
 </html>
